@@ -3,12 +3,15 @@ import modals from '../js/modules/modals';
 import tabs from '../js/modules/tabs';
 import forms from '../js/modules/forms';
 import changeModalState from '../js/modules/changeModalState';
-// import checkNumInputs from '../js/modules/checkNumInputs';
+import timer from '../js/modules/timer';
+import images from '../js/modules/images';
 
 window.addEventListener('DOMContentLoaded', () => {
   'use strict';
 
   let modalState = {};
+  const dedline = '01-01-2021';
+  // const dedline = '2021-01-01';
 
   changeModalState(modalState);
   modals();
@@ -27,4 +30,6 @@ window.addEventListener('DOMContentLoaded', () => {
     'inline-block'
   );
   forms(modalState);
+  timer('.container1', dedline);
+  images();
 });
