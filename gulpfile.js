@@ -4,8 +4,8 @@ const gulp = require('gulp');
 const webpack = require('webpack-stream');
 const browsersync = require('browser-sync');
 
-// const dist = "./dist/"; //! Ссылка на локальный сервер port: 4000
-const dist = 'G:/ospanel/domains/window.loc'; //! Ссылка на вертуальный сервер OpenServer
+const dist = './dist/'; //! Ссылка на локальный сервер port: 4000
+// const dist = 'G:/ospanel/domains/window.loc'; //! Ссылка на вертуальный сервер OpenServer
 
 gulp.task('copy-html', () => {
   return gulp
